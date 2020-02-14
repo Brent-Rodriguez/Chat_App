@@ -13,37 +13,51 @@
     <h1 class="my-4 text-center">Wi Chat</h1>
 
   <!-- Chat Buttons -->
-  <div class="chat-room mb-3 text-center">
-    <div class="my-2">
-      <button class="btn" id="general">#General</button>
-      <button class="btn" id="gaming">#Gaming</button>
-      <button class="btn" id="music">#Music</button>
-      <button class="btn" id="javascript">#Javascript</button>
+    <div class="chat-room mb-3 text-center">
+      <div class="my-2">
+        <button class="btn" id="general">#General</button>
+        <button class="btn" id="gaming">#Gaming</button>
+        <button class="btn" id="music">#Music</button>
+        <button class="btn" id="javascript">#Javascript</button>
+      </div>
     </div>
-  </div>
 
   <!-- Chat Window -->
-  <div class="chat-window">
-    <ul class="chat-list list-group">
-      <!-- Messages -->
-    </ul>
-  </div>
+    <div class="chat-window">
+      <ul class="chat-list list-group">
+        <!-- Messages -->
+      </ul>
+    </div>
 
   <!-- Chat Form -->
 
-  <form action="" class="new-chat my-3">
-    <div class="input-group">
-      <div class="input-group-append">
-        <div class="input-group-text">Your Message:</div>
+    <form action="" class="new-chat my-3">
+      <div class="input-group">
+        <div class="input-group-append">
+          <div class="input-group-text">Your Message :</div>
+        </div>
+        <input type="text" class="form-control" id="message" required>
+          <div class="input-group-append">
+          <input type="submit" class="btn" value="send">
+        </div>
       </div>
-      <input type="text" class="form-control" id="message" required>
-      <div class="input-group-append">
-        <input type="submit" class="btn" value="send">
-      </div>
-    </div>
-  </form>
+    </form>
 
   <!-- Update Name -->
+    <form class="new-name my-3">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Update Name :</div>
+        </div>
+        <input type="text" id="name" class="form-control" required>
+        <div class="input-group-append">
+          <input type="submit" class="btn" value="update">
+        </div>
+      </div>
+      <div class="update-mssg"></div>
+    </form>
+
+    
   </div>
 
  
