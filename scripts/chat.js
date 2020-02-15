@@ -27,7 +27,6 @@ chatroom.addChat('Welcome Everyone')
   .then(() => console.log('Welcome Everyone'))
   .catch(err => console.log(err))
 
-console.log(chatroom)
 
 
 // real-time listener to get new chats
