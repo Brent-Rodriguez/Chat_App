@@ -41,11 +41,15 @@ class Chatroom {
   updateName(username){
     this.username = username
   }
-  
+
   // Update room
   updateRoom(room){
     this.room = room
     console.log('Room Updated')
+    if(this.unsub){
+      this.unsub()
+    }
+    
   }
 }
 
