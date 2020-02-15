@@ -19,6 +19,18 @@ class Chatroom {
     const responce = await this.chats.add(chat)
     return responce
   }
+  getChats(callback){
+    this.chats
+     .onSnapshot(snapshot => {
+       snapshot.docChanges().forEach(change => {
+         if(change.type === 'added'){
+           //UI Update
+           callback(change.doc.data())
+
+         }
+       })
+     })
+  } 
 }
 
 const chatroom = new Chatroom('gaming', 'Greg')
