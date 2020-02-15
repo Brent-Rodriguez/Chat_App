@@ -60,6 +60,28 @@
     
   </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBCTOb99R9R4MGunpymyHG5AZYHjzN9kac",
+      authDomain: "chat-app-8bb90.firebaseapp.com",
+      databaseURL: "https://chat-app-8bb90.firebaseio.com",
+      projectId: "chat-app-8bb90",
+      storageBucket: "chat-app-8bb90.appspot.com",
+      messagingSenderId: "651430242677",
+      appId: "1:651430242677:web:7ba678688d5721cf788b3c"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+  </script>
  
 
 
