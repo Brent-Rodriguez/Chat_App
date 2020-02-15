@@ -19,8 +19,11 @@ class Chatroom {
     const responce = await this.chats.add(chat)
     return responce
   }
+
+  // real-time listener to get new chats
   getChats(callback){
     this.chats
+    .where('room', '==', this.room)
      .onSnapshot(snapshot => {
        snapshot.docChanges().forEach(change => {
          if(change.type === 'added'){
@@ -35,13 +38,17 @@ class Chatroom {
 
 const chatroom = new Chatroom('gaming', 'Greg')
 
-chatroom.addChat('Welcome Everyone')
-  .then(() => console.log('Welcome Everyone'))
-  .catch(err => console.log(err))
+// chatroom.addChat('Welcome Everyone')
+//   .then(() => console.log('Welcome Everyone'))
+//   .catch(err => console.log(err))
+
+chatroom.getChats((data) => {
+  console.log(data)
+})
 
 
 
-// real-time listener to get new chats
+
 
 
 // Update username
