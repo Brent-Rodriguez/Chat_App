@@ -15,6 +15,6 @@ class ChatUI {
     </li>
     `;
 
-    this.list += html
+    this.list.innerHTML += html
   }
 }
