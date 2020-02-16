@@ -54,14 +54,6 @@ class Chatroom {
 
 
 
-// setTimeout(() => {
-//   chatroom.updateRoom('gaming')
-//   chatroom.updateName('Mike')
-//   chatroom.getChats(data => console.log(data))
-//   chatroom.addChat('hello')
-// }, 3000)
-
-
 
 
 
