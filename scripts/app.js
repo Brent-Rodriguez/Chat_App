@@ -8,6 +8,4 @@ const chatroom = new Chatroom('gaming', 'Greg')
 
 
 // Get and Render Chats
-chatroom.getChats((data) => {
-  chatUI.render(data)
-})
+chatroom.getChats(data => chatUI.render(data))
