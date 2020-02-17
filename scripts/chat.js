@@ -26,15 +26,15 @@ class Chatroom {
     this.unsub = this.chats
     .where('room', '==', this.room)
     .orderBy('created_at')
-     .onSnapshot(snapshot => {
-       snapshot.docChanges().forEach(change => {
-         if(change.type === 'added'){
-           //UI Update
-           callback(change.doc.data())
+    .onSnapshot(snapshot => {
+      snapshot.docChanges().forEach(change => {
+        if(change.type === 'added'){
+          //UI Update
+          callback(change.doc.data())
 
-         }
-       })
-     })
+        }
+      })
+    })
   }
 
   // Update username
