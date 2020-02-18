@@ -31,7 +31,7 @@ newNameForm.addEventListener('submit', e => {
 
 // Class Instances
 const chatUI = new ChatUI(chatList)
-const chatroom = new Chatroom('gaming', 'Greg')
+const chatroom = new Chatroom('gaming', 'Anonymous')
 
 
 // Get and Render Chats
