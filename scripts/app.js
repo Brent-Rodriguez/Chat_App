@@ -24,7 +24,10 @@ newNameForm.addEventListener('submit', e => {
    // Show Update Message
    updateMssg.innerText = `Your Name was Updated to ${newName}`;
    setTimeout(() => updateMssg.innerText = '', 3000)
-}) 
+})
+
+// Check Local Storage for Name
+
 
 // Class Instances
 const chatUI = new ChatUI(chatList)
