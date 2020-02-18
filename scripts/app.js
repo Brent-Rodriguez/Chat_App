@@ -7,7 +7,9 @@ const newChatForm = document.querySelector('.new-chat')
 newChatForm.addEventListener('submit', e => {
   e.preventDefault()
   const message = newChatForm.message.value.trim()
-
+  chatroom.addChat(message)
+   .then(() => newChatForm.reset())
+   .catch(err => console.log(err))
 })
 
 // Class Instances
