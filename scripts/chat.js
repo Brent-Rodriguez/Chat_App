@@ -46,7 +46,6 @@ class Chatroom {
   // Update room
   updateRoom(room){
     this.room = room
-    console.log('Room Updated')
     if(this.unsub){
       this.unsub()
     }
