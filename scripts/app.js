@@ -3,6 +3,7 @@ const chatList = document.querySelector('.chat-list')
 const newChatForm = document.querySelector('.new-chat')
 const newNameForm = document.querySelector('.new-name')
 const updateMssg = document.querySelector('.update-mssg')
+const rooms = document.querySelector('.chat-rooms')
 
 
 // Add new Chat
@@ -25,6 +26,16 @@ newNameForm.addEventListener('submit', e => {
    updateMssg.innerText = `Your Name was Updated to ${newName}`;
    setTimeout(() => updateMssg.innerText = '', 3000)
 })
+
+// Update Chatroom
+
+rooms.addEventListener('click', e => {
+  console.log(e)
+})
+
+
+
+
 
 // Check Local Storage for Name
 const username = localStorage.username ? localStorage.username : 'Anon';
