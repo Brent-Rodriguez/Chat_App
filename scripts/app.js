@@ -33,6 +33,7 @@ rooms.addEventListener('click', e => {
   if(e.target.tagName === 'BUTTON'){
     chatUI.clear()
     chatroom.updateRoom(e.target.getAttribute('id'))
+    chatroom.getChats(chat => chatUI.render(chat))
   }
 })
 
