@@ -27,7 +27,7 @@ newNameForm.addEventListener('submit', e => {
 })
 
 // Check Local Storage for Name
-const username = localStorage.username ? localStorage.username : 'Anon'
+const username = localStorage.username ? localStorage.username : 'Anon';
 
 
 // Class Instances
