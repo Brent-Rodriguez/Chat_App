@@ -3,7 +3,7 @@ const chatList = document.querySelector('.chat-list')
 const newChatForm = document.querySelector('.new-chat')
 const newNameForm = document.querySelector('.new-name')
 const updateMssg = document.querySelector('.update-mssg')
-const rooms = document.querySelector('.chat-rooms')
+const rooms = document.querySelector('.chat-room')
 
 
 // Add new Chat
