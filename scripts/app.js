@@ -29,6 +29,7 @@ newNameForm.addEventListener('submit', e => {
 // Check Local Storage for Name
 
 
+
 // Class Instances
 const chatUI = new ChatUI(chatList)
 const chatroom = new Chatroom('gaming', 'Anonymous')
