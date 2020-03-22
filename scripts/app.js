@@ -38,7 +38,6 @@ rooms.addEventListener('click', e => {
 })
 
 
-
 // Check Local Storage for Name
 const username = localStorage.username ? localStorage.username : 'Anon';
 

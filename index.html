@@ -14,12 +14,11 @@
 
   <!-- Chat Buttons -->
     <div class="chat-room mb-3 text-center">
-      <p>Choose a Chatroom</p>
       <div class="my-2">
-        <button class="btn" id="general">#General</button>
-        <button class="btn" id="gaming">#Gaming</button>
-        <button class="btn" id="music">#Music</button>
-        <button class="btn" id="javascript">#Javascript</button>
+        <button class="btn btn-secondary" id="general">#General</button>
+        <button class="btn btn-secondary" id="gaming">#Gaming</button>
+        <button class="btn btn-secondary" id="music">#Music</button>
+        <button class="btn btn-secondary" id="javascript">#Javascript</button>
       </div>
     </div>
 
@@ -31,7 +30,6 @@
     </div>
 
   <!-- Chat Form -->
-
     <form action="" class="new-chat my-3">
       <div class="input-group">
         <div class="input-group-append">
@@ -39,55 +37,25 @@
         </div>
         <input type="text" class="form-control" id="message" required>
           <div class="input-group-append">
-          <input type="submit" class="btn" value="send">
+          <input type="submit" class="btn btn-secondary" value="send">
         </div>
       </div>
     </form>
 
   <!-- Update Name -->
     <form class="new-name my-3">
-      <div class="input-group">
+      <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <div class="input-group-text">Update Name :</div>
+          <div class="input-group-text">Update Name:</div>
         </div>
         <input type="text" id="name" class="form-control" required>
         <div class="input-group-append">
-          <input type="submit" class="btn" value="update">
+          <input type="submit" class="btn btn-secondary" value="update">
         </div>
       </div>
       <div class="update-mssg"></div>
     </form>
-
-    
   </div>
-
-
-  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyBCTOb99R9R4MGunpymyHG5AZYHjzN9kac",
-      authDomain: "chat-app-8bb90.firebaseapp.com",
-      databaseURL: "https://chat-app-8bb90.firebaseio.com",
-      projectId: "chat-app-8bb90",
-      storageBucket: "chat-app-8bb90.appspot.com",
-      messagingSenderId: "651430242677",
-      appId: "1:651430242677:web:7ba678688d5721cf788b3c"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore()
-  </script>
- 
-
-
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
