@@ -14,12 +14,11 @@
 
   <!-- Chat Buttons -->
     <div class="chat-room mb-3 text-center">
-      <div class="my-2">
-        <button class="btn btn-secondary" id="general">#General</button>
-        <button class="btn btn-secondary" id="gaming">#Gaming</button>
-        <button class="btn btn-secondary" id="music">#Music</button>
-        <button class="btn btn-secondary" id="javascript">#Javascript</button>
-      </div>
+      <div class="my-2"> Choose Chatroom </div>
+      <button class="btn btn-secondary" id="general">#General</button>
+      <button class="btn btn-secondary" id="gaming">#Gaming</button>
+      <button class="btn btn-secondary" id="music">#Music</button>
+      <button class="btn btn-secondary" id="javascript">#Javascript</button>
     </div>
 
   <!-- Chat Window -->
@@ -56,6 +55,31 @@
       <div class="update-mssg"></div>
     </form>
   </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxtg_6NXRxfLgFvl7wnxXC5Vx2SDpEf-o",
+    authDomain: "modern-js-79ee5.firebaseapp.com",
+    databaseURL: "https://modern-js-79ee5.firebaseio.com",
+    projectId: "modern-js-79ee5",
+    storageBucket: "modern-js-79ee5.appspot.com",
+    messagingSenderId: "964941406228",
+    appId: "1:964941406228:web:ef61a7a04a24db7bb98701"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore()
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
