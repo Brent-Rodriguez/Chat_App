@@ -24,15 +24,15 @@ class Chatroom {
   // real-time listener to get new chats
   getChats(callback){
     this.unsub = this.chats
-    .where('room', '==', this.room)
-    .orderBy('created_at')
+    .where('room', '==', this.room) //Firebase Query .where()
+    .orderBy('created_at') // Firebase .orderBy() retrieves all documents in ascending order by document ID
     .onSnapshot(snapshot => {
       snapshot.docChanges().forEach(change => {
         if(change.type === 'added'){
           //UI Update
           callback(change.doc.data())
 
-        }
+        }// Firebase .onSnapShot() listens to Document for changes
       })
     })
   }
